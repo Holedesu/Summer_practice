@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="my-4">Todo List</h1>
+    <div class="mb-3">
+        <input type="text" id="new-todo" class="form-control" placeholder="Add a new task">
+        <div id="error-message" class="text-danger mt-2"></div>
+        <button class="btn btn-primary mt-2" id="add-todo">Add</button>
+    </div>
+    <ul class="list-group" id="todo-list"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
