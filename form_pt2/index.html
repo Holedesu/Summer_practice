@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма обратной связи</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <form id="contactForm" novalidate>
+    <h1>Форма обратной связи</h1>
+    <div class="form-group">
+      <label for="firstName">Имя</label>
+      <input type="text" id="firstName" name="firstName" required>
+      <div class="error-message" id="firstNameError"></div>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Фамилия</label>
+      <input type="text" id="lastName" name="lastName" required>
+      <div class="error-message" id="lastNameError"></div>
+    </div>
+    <div class="form-group">
+      <label for="email">Почта</label>
+      <input type="email" id="email" name="email" required>
+      <div class="error-message" id="emailError"></div>
+    </div>
+    <div class="form-group">
+      <label for="phone">Номер телефона</label>
+      <input type="tel" id="phone" name="phone" required>
+      <div class="error-message" id="phoneError"></div>
+    </div>
+    <div class="form-group">
+      <label for="message">Сообщение</label>
+      <textarea id="message" name="message" required></textarea>
+      <div class="error-message" id="messageError"></div>
+    </div>
+    <button type="submit">Отправить</button>
+    <div class="response-message" id="responseMessage"></div>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
